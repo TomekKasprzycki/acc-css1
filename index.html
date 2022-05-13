@@ -58,6 +58,49 @@
                 </ul>
             </ul>
 
+        </article>
+
+        <article>
+            <h2>Opis dzieł</h2>
+            <div class="dziela">
+                <div class="opis">
+                    Kot I
+                </div>
+                <div class="dzielo">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam iusto eaque asperiores voluptatibus
+                    deleniti, atque, illum libero quidem nulla quisquam nostrum harum! Soluta itaque ad placeat nisi
+                    libero eaque porro.
+                </div>
+                <div class="opis">
+                    Pies VIII
+                </div>
+                <div class="dzielo">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui provident ducimus incidunt deleniti
+                    accusamus! Dolorum explicabo expedita atque dolores quaerat voluptates, ratione commodi
+                    necessitatibus, voluptatibus eum distinctio. Consequuntur, aliquid unde.
+                </div>
+                <div class="opis">
+                    Kot III
+                </div>
+                <div class="dzielo">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque, vero temporibus. Beatae, cum
+                    vel. Nesciunt cupiditate sunt eius ab ex, libero, enim ratione consectetur, minus nulla provident
+                    quas dolorum et?
+                </div>
+                <div class="opis">
+                    Lis III
+                </div>
+                <div class="dzielo">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, dolor? Quasi facilis accusantium
+                    sed? Eos tenetur, itaque obcaecati adipisci nesciunt rem soluta quo qui ut cum omnis nulla.
+                    Nesciunt, iste.
+                </div>
+            </div>
+        </article>
+
+
+        <article>
+
             <table class="tabela">
                 <caption>Dzieła</caption>
                 <thead>
@@ -89,16 +132,33 @@
                         <td>
                             Pies VIII
                         </td>
-                        <td rowspan="2">
+                        <td>
                             2020
                         </td>
-                        <td rowspan="2">
+                        <td>
                             19000
                         </td>
                     </tr>
                     <tr>
                         <td>
                             Kot III
+                        </td>
+                        <td>
+                            2020
+                        </td>
+                        <td>
+                            25000
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Lis III
+                        </td>
+                        <td>
+                            2021
+                        </td>
+                        <td>
+                            15000
                         </td>
                     </tr>
                 </tbody>
@@ -115,83 +175,86 @@
             <h1>Zapisz się na wystawę</h1>
             <p>zajawka zajawka zajawka zajawka zajawka zajawka zajawka zajawka zajawka </p>
 
-            <form action="index.jsp" method="post" name="forma">
+            <div class="wystawa">
+                <form action="index.jsp" method="post" name="forma">
 
-                <label for="imieid">
-                    Imię
-                </label>
-
-                <input type="text" name="imie" id="imieid" accesskey="i" tabindex="3">
-
-                <label for="nazwiskoid">
-                    Nazwisko
-                </label>
-                <input type="text" name="nazwisko" id="nazwiskoid" accesskey="n" tabindex="2">
-
-                <label for="hasloid">
-                    Hasło
-                </label>
-                <input type="password" name="haslo" id="hasloid" tabindex="1">
-
-
-                <fieldset>
-                    <legend>Poczestunek</legend>
-                    <label for="kawaid">
-                        Kawa
+                    <label for="imieid">
+                        Imię
                     </label>
-                    <input type="checkbox" name="opcje" value="kawa" id="kawaid">
-                    <label for="ciastkoid">
-                        Ciastko
+
+                    <input type="text" name="imie" id="imieid" accesskey="i" tabindex="3">
+
+                    <label for="nazwiskoid">
+                        Nazwisko
                     </label>
-                    <input type="checkbox" name="opcje" value="ciastko" id="ciastkoid">
-                </fieldset>
+                    <input type="text" name="nazwisko" id="nazwiskoid" accesskey="n" tabindex="2">
 
-                <fieldset>
-                    <legend>Płeć</legend>
-                    <label for="kid">
-                        Kobieta
+                    <label for="hasloid">
+                        Hasło
                     </label>
-                    <input type="radio" name="plec" value="k" id="kid">
-                    <label for="mid">
-                        Meżczyzna
-                    </label>
-                    <input type="radio" name="plec" value="m" id="mid">
-                </fieldset>
+                    <input type="password" name="haslo" id="hasloid" tabindex="1">
+
+
+                    <fieldset>
+                        <legend>Poczestunek</legend>
+                        <label for="kawaid">
+                            Kawa
+                        </label>
+                        <input type="checkbox" name="opcje" value="kawa" id="kawaid">
+                        <label for="ciastkoid">
+                            Ciastko
+                        </label>
+                        <input type="checkbox" name="opcje" value="ciastko" id="ciastkoid">
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Płeć</legend>
+                        <label for="kid">
+                            Kobieta
+                        </label>
+                        <input type="radio" name="plec" value="k" id="kid">
+                        <label for="mid">
+                            Meżczyzna
+                        </label>
+                        <input type="radio" name="plec" value="m" id="mid">
+                    </fieldset>
 
 
 
-                <div class="uwagi">
-                    <label for="dzieciid">
-                        Ilośc dzieci
-                    </label>
-                    <select name="dzieci" id="dzieciid">
-                        <option value="0" selected>Brak</option>
-                        <option value="1">Jeden</option>
-                        <option value="2">Dwa</option>
-                        <option value="3">Trzy</option>
-                    </select>
+                    <div class="uwagi">
+                        <label for="dzieciid">
+                            Ilośc dzieci
+                        </label>
+                        <select name="dzieci" id="dzieciid">
+                            <option value="0" selected>Brak</option>
+                            <option value="1">Jeden</option>
+                            <option value="2">Dwa</option>
+                            <option value="3">Trzy</option>
+                        </select>
 
 
-                    <label for="uwagiid">
-                        Uwagi
-                    </label>
-                    <textarea name="uwagi" id="uwagiid">
+                        <label for="uwagiid">
+                            Uwagi
+                        </label>
+                        <textarea name="uwagi" id="uwagiid">
 
                     </textarea>
 
-                    <input type="submit" value="Wyślij">
+                        <input type="submit" value="Wyślij">
 
-                </div>
-
-
-
-            </form>
+                    </div>
 
 
+
+                </form>
+
+            </div>
         </article>
     </main>
 
-
+<footer class="top-menu ">
+    <nav class="footer">kontakt: slynny.artysta@ojej.ajwaj</nav>
+</footer>
 
 
 

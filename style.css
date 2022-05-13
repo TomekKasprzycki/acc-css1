@@ -8,8 +8,8 @@ body {
  }
 
  .top-menu {
-     background-image: url('istockphoto-877386830-1024x1024.jpg');
-     height: 10vh;
+    background-image: url('istockphoto-877386830-1024x1024.jpg');
+    height: 10vh;
  }
 
  .lewa {
@@ -55,8 +55,24 @@ body {
     text-decoration: underline;
 }
 
+.dziela{
+    margin-left: 3vw;
+    display: grid;
+    grid-template-columns: max-content 45vw;
+}
+
+.opis{
+    font-weight: 900;
+    padding: 3px;
+    /* text-align: right; */
+}
+
+.dzielo{
+    padding: 3px;
+}
+
 .tabela {
-    margin: auto;
+    margin: 1vw auto 0 3vw;
      border: 3px solid black;
      width: 80%;
      border-collapse: collapse;
@@ -89,6 +105,13 @@ th {
     font-weight: normal;
     background-color: #07e5f5;
     text-align: left;
+}
+
+.wystawa{
+    padding-left: 3vw;
+    margin-top: 2vh;
+    padding-top: 2vh;
+    border-top: 1px dotted gray;
 }
 
 input {
@@ -136,4 +159,9 @@ input[type="submit"]:hover {
     background-color: rgb(11, 194, 133);
 }
 
-
+.footer{
+    width: max-content;
+    margin-left: auto;
+    padding: 2vh;
+    color: white;
+}
