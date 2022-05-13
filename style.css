@@ -112,12 +112,19 @@ input:focus{
 }
 
 textarea{
-    margin-left: 2vw;
     width: 25vw;
 }
 
+div > label {
+    margin-right: 2vw;
+}
+
+select + label {
+    margin-left: 2vw;
+}
+
 input[type="submit"] {
-    margin: 1vh;
+    margin-left: 2vh;
     display: block;
     height: 5vh;
     width: 8vw;
